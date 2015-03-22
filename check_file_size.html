@@ -1,0 +1,39 @@
+<!-- 
+This example will show you how to get the file size of an imput file. 
+This is a useful feature in HTML 5 to check the size of a file before
+you upload it.
+
+Javascript version
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Check File Size</title>
+<script>
+function checkSize(el) { 
+	if (typeof FileReader !== "undefined") {
+		var size = el.files[0].size;
+		document.getElementById('filesizediv').innerHTML = 'The size of the file is: ' + size;
+	}
+	else { 
+		alert('Sorry size checking isn\'t available');
+	} 
+}
+ 
+</script>
+</head>
+
+<body>
+<form action="" method="get">
+	<input name="myFile" id="myFile" type="file">
+</form>
+<div id="filesizediv">
+File size will display here
+</div>
+<script>
+// depending on how much support you need to give older browsers, you may need to change this line
+document.getElementById('myFile').addEventListener('change', function() { checkSize(this) } );
+</script>
+</body>
+</html>
