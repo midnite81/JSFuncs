@@ -15,7 +15,7 @@ $(window).load( function() {
    var heights = $elements.map(function ()
        {
            return $(this).height();
-       }).get(),
+       }).get();
    
    maxHeight = Math.max.apply(null, heights) + 10;
    $elements.css('min-height',maxHeight);
