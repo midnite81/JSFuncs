@@ -1,9 +1,9 @@
 /*
  * This script will check the height of each element in 
- * the $elements definition and then set each element as 
+ * within the defined context and then set each element as
  * defined with that height. This is useful when using 
- * floated elements. 
- *
+ * floated elements. See setHeightAcrossElements for an example
+ * on how to use.
  */
 
 function HeightElements() {
