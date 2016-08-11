@@ -1,4 +1,3 @@
-<script>
 /*
  * This script will check the height of each element in 
  * the $elements definition and then set each element as 
@@ -21,4 +20,4 @@ $(window).load( function() {
    $elements.css('min-height',maxHeight);
    }
 )
-</script>
+
